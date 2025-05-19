@@ -14,11 +14,11 @@ const emailRegistro = async (datos) => {
 
     // Enviar el email
     const info = await transport.sendMail({
-        from: "APV - Administrador de Pacientes de Veterinaria",
+        from: "Paw Manager - Administrador de Pacientes de Veterinaria",
         to: email,
-        subject: "Confirma tu cuenta en APV",
-        text: "Confirma tu cuenta en APV",
-        html: `<p>Hola ${nombre}, comprueba tu cuenta en APV.</p>
+        subject: "Confirma tu cuenta en Paw Manager",
+        text: "Confirma tu cuenta en Paw Manager",
+        html: `<p>Hola ${nombre}, comprueba tu cuenta en Paw Manager.</p>
             <p>Tu cuenta ya está lista, solo debes confirmarla en el siguiente enlace:
             <a href="${process.env.FRONTEND_URL}/confirmar/${token}">Confirmar cuenta</a> </p>
             
