@@ -13,7 +13,11 @@ dotenv.config();
 
 conectarDB();
 
-const whitelist = [process.env.FRONTEND_URL];
+const whitelist = [
+  process.env.FRONTEND_URL,
+  'https://paw-manager-frontend.vercel.app'
+];
+
 
 const corsOptions = {
     origin: function (origin, callback) {
